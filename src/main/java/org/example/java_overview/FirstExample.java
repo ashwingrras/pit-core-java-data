@@ -7,7 +7,7 @@ package org.example.java_overview;
         public: allow outside with different package
         private: allow only same class
         default: allow only same package
-        protected: allow only same package and on sublcass also
+        protected: allow only same package and on subclass also
     3. data types:
         primitive:
         int, float, double, char, boolean, byte,
@@ -17,6 +17,7 @@ package org.example.java_overview;
         Object
     4. variable: local, instance and static
     5. methods: normal, static
+    6.
 
  */
 
