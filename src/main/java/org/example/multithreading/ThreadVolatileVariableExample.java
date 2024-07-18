@@ -2,7 +2,6 @@ package org.example.multithreading;
 
 public class ThreadVolatileVariableExample
 {
-
     static boolean isRunning = true;
     static  int index = 0;
     public static void main(String[] args)

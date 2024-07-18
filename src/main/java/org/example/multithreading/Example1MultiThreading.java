@@ -51,11 +51,10 @@ public class Example1MultiThreading
         Thread thread = new Thread(threadWithImplement);
         System.out.println("line no 53: "+thread.getState()); // NEW
         thread.start();
-
         try
         {
             System.out.println("line no 57: "+thread.getState());//RUNNABLE
-            Thread.sleep(3000); //
+            Thread.sleep(5000); //
             System.out.println("line no 59: "+thread.getState());
             thread.join(); // request thread to terminate state
             System.out.println("line no 61: "+thread.getState());

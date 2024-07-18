@@ -50,6 +50,19 @@ public class DeadlockDemo {
         Threaddemo2 d2  = new Threaddemo2();
         d1.start();
         d2.start();
-
+        System.out.println("d1: "+d1.getState());
+        System.out.println("d2: "+d2.getState());
+        try {
+            Thread.sleep(1000);
+            System.out.println("d1: "+d1.getState());
+            System.out.println("d2: "+d2.getState());
+            Thread.sleep(2000);
+            System.out.println("d1: "+d1.getState());
+            System.out.println("d2: "+d2.getState());
+            //d1.join();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("after both thread, main method END");
     }
 }
