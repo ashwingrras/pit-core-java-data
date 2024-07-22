@@ -1,11 +1,6 @@
 package org.example.date_time;
 
 /*
-        CRUD
-        C: CREATE
-        R: READ
-        U: UPDATE
-        D: DELETE
 
 
         Date
@@ -15,9 +10,6 @@ package org.example.date_time;
         LocalDateTime
         Zone
         Period
-        Offset
-
-        ENUM
 
  */
 

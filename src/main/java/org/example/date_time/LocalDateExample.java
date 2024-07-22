@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.TimeZone;
 
 public class LocalDateExample
 {
@@ -17,12 +18,13 @@ public class LocalDateExample
         System.out.println(localDate.atStartOfDay());
         LocalTime localTime = LocalTime.now();
         System.out.println(localTime);
+
         ZonedDateTime zonedDateTime = ZonedDateTime.now();
         System.out.println(zonedDateTime);
 
-        ZonedDateTime newYorkDateTime = zonedDateTime.withZoneSameInstant(ZoneId.of("Japan"));
-        System.out.println("newYorkDateTime "+newYorkDateTime);
-        System.out.println("Date and Time in New York: " + newYorkDateTime.format(DateTimeFormatter.ISO_ZONED_DATE_TIME));
+        ZonedDateTime newYorkDateTime = zonedDateTime.withZoneSameInstant(ZoneId.of("Asia/Bangkok"));
+        System.out.println("Japan "+newYorkDateTime);
+        System.out.println("Date and Time in Japan: " + newYorkDateTime.format(DateTimeFormatter.ISO_ZONED_DATE_TIME));
 
         /*
         String[] id = TimeZone.getAvailableIDs();
