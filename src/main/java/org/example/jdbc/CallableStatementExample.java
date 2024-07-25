@@ -36,7 +36,7 @@ public class CallableStatementExample {
 
             CallableStatement cstmt = connection.prepareCall(sql);
             // IN parameters
-            cstmt.setString(1, "nishchal");
+            cstmt.setString(1, "harshit");
 
             // OUT parameter
             cstmt.registerOutParameter(2, Types.INTEGER);
@@ -45,8 +45,7 @@ public class CallableStatementExample {
             cstmt.execute();
 
             // Retrieve the OUT parameter
-            int voterCount = 0;
-            voterCount = cstmt.getInt(2);
+            int voterCount = cstmt.getInt(2);
 
             System.out.println(" voterCount: " + voterCount);
 

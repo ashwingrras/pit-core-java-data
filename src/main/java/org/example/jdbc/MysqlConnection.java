@@ -46,9 +46,14 @@ import java.sql.Statement;
 class MysqlConnection {
     public static void main(String args[]){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            //Deprecated, if we import latest version of mysql connected
+            //Class.forName("com.mysql.jdbc.Driver");
+            // with latest mysql connector
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String jdbcUrl = "jdbc:mysql://localhost:3306/grras?useUnicode=true&characterEncoding=UTF-8";
+            // it is compulsory with older version of mysql connector
+            //String jdbcUrl = "jdbc:mysql://localhost:3306/grras?useUnicode=true&characterEncoding=UTF-8";
+            String jdbcUrl = "jdbc:mysql://localhost:3306/grras";
             Connection con=DriverManager.getConnection(jdbcUrl,"root","ashwin1234");
 
 

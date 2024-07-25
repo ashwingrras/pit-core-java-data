@@ -29,6 +29,8 @@ import java.sql.*;
     5. CallableStatement
     6. BatchProcessing
     7. Transaction Management ( Commit, Rollback, SavePoint)
+    8. DataBase metadata
+    9. RowSet
 
  */
 
